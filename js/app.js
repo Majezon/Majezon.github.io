@@ -34,7 +34,7 @@ function myFunction() {
   }
 }
 
-let countDownDate = new Date("February 20, 2024").getTime();
+let countDownDate = new Date("January 22, 2024").getTime();
 let x = setInterval(function () {
   let now = new Date().getTime();
   let distance = countDownDate - now;
@@ -46,6 +46,7 @@ let x = setInterval(function () {
     days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
+    document.getElementById("demo").innerHTML =
+      "Najnowszy projekt został dodany parę dni temu :)";
   }
 }, 1000);
